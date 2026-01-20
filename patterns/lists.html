@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Examples of list patterns in HTML including unordered, ordered, and definition lists.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>List Patterns | HTML Pattern Library</title>
 </head>
 <body>
+    <header>
+        <h1>List Patterns</h1>
+        <p>Examples demonstrating unordered lists, ordered lists, and definition lists in HTML.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Unordered Lists</h2>
+            <p>Unordered lists are used when the order of items does not matter. Each item is marked with a bullet point by default.</p>
+
+            <h3>Basic Unordered List</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>Nested Unordered List</h3>
+            <ul>
+                <li>Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Frontend
+        &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+            &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Backend
+        &lt;ul&gt;
+            &lt;li&gt;Node.js&lt;/li&gt;
+            &lt;li&gt;Python&lt;/li&gt;
+            &lt;li&gt;PHP&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Ordered Lists</h2>
+            <p>Ordered lists are used when the sequence of items matters. Items are numbered automatically.</p>
+
+            <h3>Basic Ordered List</h3>
+            <ol>
+                <li>Open VS Code</li>
+                <li>Create a new file</li>
+                <li>Write HTML code</li>
+                <li>Save the file</li>
+                <li>Open in browser</li>
+            </ol>
+
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Open VS Code&lt;/li&gt;
+    &lt;li&gt;Create a new file&lt;/li&gt;
+    &lt;li&gt;Write HTML code&lt;/li&gt;
+    &lt;li&gt;Save the file&lt;/li&gt;
+    &lt;li&gt;Open in browser&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h3>Nested Ordered List</h3>
+            <ol>
+                <li>Plan your project
+                    <ol>
+                        <li>Define goals</li>
+                        <li>Research tools</li>
+                        <li>Create timeline</li>
+                    </ol>
+                </li>
+                <li>Build your project
+                    <ol>
+                        <li>Set up environment</li>
+                        <li>Write code</li>
+                        <li>Test features</li>
+                    </ol>
+                </li>
+                <li>Deploy your project</li>
+            </ol>
+
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Plan your project
+        &lt;ol&gt;
+            &lt;li&gt;Define goals&lt;/li&gt;
+            &lt;li&gt;Research tools&lt;/li&gt;
+            &lt;li&gt;Create timeline&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Build your project
+        &lt;ol&gt;
+            &lt;li&gt;Set up environment&lt;/li&gt;
+            &lt;li&gt;Write code&lt;/li&gt;
+            &lt;li&gt;Test features&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Deploy your project&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Definition Lists</h2>
+            <p>Definition lists are used to display terms and their descriptions, often used for glossaries or metadata.</p>
+
+            <h3>Basic Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - the standard markup language for web pages.</dd>
+                
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - used for styling HTML elements.</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>A programming language that enables interactive web pages.</dd>
+            </dl>
+
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language - the standard markup language for web pages.&lt;/dd&gt;
     
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets - used for styling HTML elements.&lt;/dd&gt;
+    
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;A programming language that enables interactive web pages.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | List Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
 </body>
 </html>

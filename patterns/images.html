@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of image patterns in HTML including basic images, alt attributes, and responsive images.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Image Patterns | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Image Patterns</h1>
+        <p>Examples demonstrating how to use images in HTML, including best practices for accessibility and responsiveness.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Basic Image Element</h2>
+            <p>The img element embeds an image into the document. It requires a src attribute to specify the image source.</p>
+
+            <h3>Simple Image with Alt Text</h3>
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder image showing 400x300 dimensions">
+            <pre><code>&lt;img src="https://via.placeholder.com/400x300" alt="Placeholder image showing 400x300 dimensions"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>The Importance of Alt Attributes</h2>
+            <p>The alt attribute provides alternative text for images. It is crucial for accessibility and SEO.</p>
+
+            <h3>Good Alt Text Example</h3>
+            <img src="https://via.placeholder.com/300x200/0066cc/ffffff?text=Blue+Button" alt="Blue rectangular button with white text">
+            <pre><code>&lt;img src="..." alt="Blue rectangular button with white text"&gt;</code></pre>
+
+            <h3>Poor Alt Text Example (Avoid)</h3>
+            <img src="https://via.placeholder.com/300x200/cc6600/ffffff?text=Image" alt="image">
+            <pre><code>&lt;img src="..." alt="image"&gt;</code></pre>
+
+            <p>Avoid generic alt text like "image" or "picture". Describe what the image shows.</p>
+        </section>
+
+        <section>
+            <h2>Image Width and Height</h2>
+            <p>You can specify image dimensions using width and height attributes to prevent layout shifts while the page loads.</p>
+
+            <h3>Image with Specified Dimensions</h3>
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder image with specified dimensions" width="300" height="200">
+            <pre><code>&lt;img src="https://via.placeholder.com/600x400" 
+     alt="Placeholder image with specified dimensions" 
+     width="300" 
+     height="200"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Common Image Formats</h2>
+            <p>Different image formats serve different purposes. Here are the most common formats used on the web:</p>
+
+            <dl>
+                <dt>JPEG (.jpg, .jpeg)</dt>
+                <dd>Best for photographs and images with many colors. Supports compression but loses quality.</dd>
+                
+                <dt>PNG (.png)</dt>
+                <dd>Supports transparency. Best for logos, icons, and images requiring sharp edges.</dd>
+                
+                <dt>WebP (.webp)</dt>
+                <dd>Modern format with better compression than JPEG and PNG. Supports both lossy and lossless compression.</dd>
+                
+                <dt>SVG (.svg)</dt>
+                <dd>Vector format that scales infinitely without quality loss. Best for logos and simple graphics.</dd>
+                
+                <dt>GIF (.gif)</dt>
+                <dd>Supports animation but limited to 256 colors. Mostly used for simple animations.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Picture Element for Responsive Images</h2>
+            <p>The picture element allows you to provide multiple image sources for different screen sizes or formats.</p>
+
+            <h3>Basic Picture Element</h3>
+            <picture>
+                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x600">
+                <source media="(min-width: 400px)" srcset="https://via.placeholder.com/400x300">
+                <img src="https://via.placeholder.com/200x150" alt="Responsive placeholder image">
+            </picture>
+
+            <pre><code>&lt;picture&gt;
+    &lt;source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x600"&gt;
+    &lt;source media="(min-width: 400px)" srcset="https://via.placeholder.com/400x300"&gt;
+    &lt;img src="https://via.placeholder.com/200x150" alt="Responsive placeholder image"&gt;
+&lt;/picture&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Figure and Figcaption</h2>
+            <p>Use the figure element to wrap images that need captions, providing semantic meaning.</p>
+
+            <h3>Image with Caption</h3>
+            <figure>
+                <img src="https://via.placeholder.com/500x300" alt="Example chart showing data visualization">
+                <figcaption>Figure 1: Sample data visualization chart</figcaption>
+            </figure>
+
+            <pre><code>&lt;figure&gt;
+    &lt;img src="https://via.placeholder.com/500x300" alt="Example chart showing data visualization"&gt;
+    &lt;figcaption&gt;Figure 1: Sample data visualization chart&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Image Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>

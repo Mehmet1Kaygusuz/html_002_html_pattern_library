@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of link patterns and file paths in HTML.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Link Patterns | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Link Patterns</h1>
+        <p>Examples demonstrating hyperlinks, file paths, and link attributes in HTML.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Basic Links</h2>
+            <p>The anchor element creates hyperlinks to other pages, files, or locations within the same page.</p>
+
+            <h3>Simple Link</h3>
+            <p><a href="https://www.example.com">Visit Example.com</a></p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+
+            <h3>Link Opening in New Tab</h3>
+            <p><a href="https://www.github.com" target="_blank">Open GitHub in new tab</a></p>
+            <pre><code>&lt;a href="https://www.github.com" target="_blank"&gt;Open GitHub in new tab&lt;/a&gt;</code></pre>
+
+            <h3>Link with Title Attribute</h3>
+            <p><a href="https://www.mozilla.org" title="Visit Mozilla Developer Network">MDN Web Docs</a></p>
+            <pre><code>&lt;a href="https://www.mozilla.org" title="Visit Mozilla Developer Network"&gt;MDN Web Docs&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Relative File Paths</h2>
+            <p>Relative paths navigate to files based on the current file's location in the folder structure.</p>
+
+            <h3>Link to File in Same Folder</h3>
+            <p><a href="headings.html">Headings Pattern</a></p>
+            <pre><code>&lt;a href="headings.html"&gt;Headings Pattern&lt;/a&gt;</code></pre>
+
+            <h3>Link to Parent Folder</h3>
+            <p><a href="../index.html">Back to Index</a></p>
+            <pre><code>&lt;a href="../index.html"&gt;Back to Index&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Absolute File Paths</h2>
+            <p>Absolute paths provide the full URL to a resource, starting from the domain root or protocol.</p>
+
+            <h3>Full URL Path</h3>
+            <p><a href="https://www.wikipedia.org">Wikipedia</a></p>
+            <pre><code>&lt;a href="https://www.wikipedia.org"&gt;Wikipedia&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Email and Special Links</h2>
+            <p>Links can also trigger email clients or navigate to specific parts of a page.</p>
+
+            <h3>Email Link</h3>
+            <p><a href="mailto:mehmet1kaygusuz@gmail.com">Send me an email</a></p>
+            <pre><code>&lt;a href="mailto:mehmet1kaygusuz@gmail.com"&gt;Send me an email&lt;/a&gt;</code></pre>
+
+            <h3>Phone Link</h3>
+            <p><a href="tel:+447123456789">Call me</a></p>
+            <pre><code>&lt;a href="tel:+447123456789"&gt;Call me&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Link Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of basic HTML form patterns including inputs, textareas, selects, and form attributes.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Form Patterns (Basic) | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Form Patterns (Basic)</h1>
+        <p>Examples demonstrating basic HTML form elements and their attributes.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Basic Form Structure</h2>
+            <p>Forms use the form element to collect user input. The action attribute specifies where to send form data, and method specifies how to send it (GET or POST).</p>
+
+            <h3>Simple Contact Form</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                <br><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+
+            <pre><code>&lt;form action="#" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" rows="4" cols="30"&gt;&lt;/textarea&gt;
+    
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Common Input Types</h2>
+            <p>HTML provides various input types for different kinds of data.</p>
+
+            <h3>Different Input Types</h3>
+            <form action="#" method="GET">
+                <label for="text-input">Text:</label>
+                <input type="text" id="text-input" name="text-input" placeholder="Enter text">
+                <br><br>
+                
+                <label for="password-input">Password:</label>
+                <input type="password" id="password-input" name="password-input" placeholder="Enter password">
+                <br><br>
+                
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email-input" placeholder="you@example.com">
+                <br><br>
+                
+                <label for="number-input">Number:</label>
+                <input type="number" id="number-input" name="number-input" min="1" max="100">
+                <br><br>
+                
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input" name="date-input">
+                <br><br>
+                
+                <label for="color-input">Color:</label>
+                <input type="color" id="color-input" name="color-input">
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <pre><code>&lt;form action="#" method="GET"&gt;
+    &lt;label for="text-input"&gt;Text:&lt;/label&gt;
+    &lt;input type="text" id="text-input" name="text-input" placeholder="Enter text"&gt;
+    
+    &lt;label for="password-input"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password-input" name="password-input"&gt;
+    
+    &lt;label for="email-input"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email-input" name="email-input"&gt;
+    
+    &lt;label for="number-input"&gt;Number:&lt;/label&gt;
+    &lt;input type="number" id="number-input" name="number-input" min="1" max="100"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Checkboxes and Radio Buttons</h2>
+            <p>Checkboxes allow multiple selections, while radio buttons allow only one selection from a group.</p>
+
+            <h3>Checkboxes</h3>
+            <form action="#" method="POST">
+                <p>Select your interests:</p>
+                <input type="checkbox" id="html" name="interest" value="html">
+                <label for="html">HTML</label>
+                <br>
+                
+                <input type="checkbox" id="css" name="interest" value="css">
+                <label for="css">CSS</label>
+                <br>
+                
+                <input type="checkbox" id="javascript" name="interest" value="javascript">
+                <label for="javascript">JavaScript</label>
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <pre><code>&lt;input type="checkbox" id="html" name="interest" value="html"&gt;
+&lt;label for="html"&gt;HTML&lt;/label&gt;
+
+&lt;input type="checkbox" id="css" name="interest" value="css"&gt;
+&lt;label for="css"&gt;CSS&lt;/label&gt;</code></pre>
+
+            <h3>Radio Buttons</h3>
+            <form action="#" method="POST">
+                <p>Select your experience level:</p>
+                <input type="radio" id="beginner" name="level" value="beginner">
+                <label for="beginner">Beginner</label>
+                <br>
+                
+                <input type="radio" id="intermediate" name="level" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <br>
+                
+                <input type="radio" id="advanced" name="level" value="advanced">
+                <label for="advanced">Advanced</label>
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <pre><code>&lt;input type="radio" id="beginner" name="level" value="beginner"&gt;
+&lt;label for="beginner"&gt;Beginner&lt;/label&gt;
+
+&lt;input type="radio" id="intermediate" name="level" value="intermediate"&gt;
+&lt;label for="intermediate"&gt;Intermediate&lt;/label&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Select Dropdown</h2>
+            <p>The select element creates a dropdown menu with multiple options.</p>
+
+            <h3>Basic Dropdown</h3>
+            <form action="#" method="POST">
+                <label for="country">Choose your country:</label>
+                <select id="country" name="country">
+                    <option value="">--Please choose--</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                </select>
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <pre><code>&lt;label for="country"&gt;Choose your country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value=""&gt;--Please choose--&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;option value="usa"&gt;United States&lt;/option&gt;
+    &lt;option value="canada"&gt;Canada&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Common Form Attributes</h2>
+            <p>HTML provides several attributes to control form behavior and validation.</p>
+
+            <h3>Form with Various Attributes</h3>
+            <form action="#" method="POST">
+                <label for="username">Username (required):</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                
+                <label for="website">Website (readonly):</label>
+                <input type="url" id="website" name="website" value="https://example.com" readonly>
+                <br><br>
+                
+                <label for="comments">Comments (disabled):</label>
+                <textarea id="comments" name="comments" disabled>This field is disabled</textarea>
+                <br><br>
+                
+                <label for="age">Age (min/max):</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+                <br><br>
+                
+                <label for="pattern-input">Pattern (letters only):</label>
+                <input type="text" id="pattern-input" name="pattern-input" pattern="[A-Za-z]+" title="Only letters allowed">
+                <br><br>
+                
+                <input type="hidden" name="user-id" value="12345">
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <pre><code>&lt;input type="text" id="username" name="username" required&gt;
+
+&lt;input type="url" id="website" name="website" value="https://example.com" readonly&gt;
+
+&lt;textarea id="comments" name="comments" disabled&gt;This field is disabled&lt;/textarea&gt;
+
+&lt;input type="number" id="age" name="age" min="18" max="100"&gt;
+
+&lt;input type="text" id="pattern-input" pattern="[A-Za-z]+" title="Only letters allowed"&gt;
+
+&lt;input type="hidden" name="user-id" value="12345"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Form Patterns (Basic)</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of semantic HTML structure including header, nav, main, article, section, aside, and footer elements.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Semantic Structure Patterns | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Semantic Structure Patterns</h1>
+        <p>Examples demonstrating semantic HTML5 elements for better document structure and accessibility.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>What is Semantic HTML?</h2>
+            <p>Semantic HTML uses elements that clearly describe their meaning to both the browser and the developer. Instead of using generic div and span elements everywhere, semantic elements like header, nav, main, article, section, aside, and footer provide context about the content they contain.</p>
+            
+            <p>Benefits of semantic HTML include:</p>
+            <ul>
+                <li>Improved accessibility for screen readers</li>
+                <li>Better SEO (search engines understand content structure)</li>
+                <li>Easier code maintenance and readability</li>
+                <li>Clearer document outline</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Header Element</h2>
+            <p>The header element represents introductory content, typically containing heading elements, logos, navigation, or search forms.</p>
+
+            <h3>Example Header Structure</h3>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;Website Title&lt;/h1&gt;
+    &lt;p&gt;Tagline or description&lt;/p&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Nav Element</h2>
+            <p>The nav element represents a section of navigation links. Not all links need to be in a nav element—only major navigation blocks.</p>
+
+            <h3>Example Navigation</h3>
+            <pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Main Element</h2>
+            <p>The main element represents the dominant content of the page. There should be only one main element per page, and it should not be nested inside header, footer, nav, aside, or article elements.</p>
+
+            <h3>Example Main Structure</h3>
+            <pre><code>&lt;main&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+    
+    &lt;section&gt;
+        &lt;h2&gt;Section Heading&lt;/h2&gt;
+        &lt;p&gt;Section content goes here.&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Article and Section Elements</h2>
+            <p>The article element represents a self-contained composition that could be independently distributed or reused (e.g., blog post, news article). The section element represents a thematic grouping of content, typically with a heading.</p>
+
+            <h3>Article Example</h3>
+            <pre><code>&lt;article&gt;
+    &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+    &lt;p&gt;Published on &lt;time datetime="2026-01-20"&gt;January 20, 2026&lt;/time&gt;&lt;/p&gt;
+    &lt;p&gt;This is the content of the blog post...&lt;/p&gt;
+    
+    &lt;section&gt;
+        &lt;h3&gt;Comments&lt;/h3&gt;
+        &lt;p&gt;Comment content...&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/article&gt;</code></pre>
+
+            <h3>Section Example</h3>
+            <pre><code>&lt;section&gt;
+    &lt;h2&gt;Chapter 1: Introduction&lt;/h2&gt;
+    &lt;p&gt;Content of chapter 1...&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h2&gt;Chapter 2: Getting Started&lt;/h2&gt;
+    &lt;p&gt;Content of chapter 2...&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Aside Element</h2>
+            <p>The aside element represents content that is tangentially related to the main content, such as sidebars, pull quotes, or advertisements.</p>
+
+            <h3>Example Aside</h3>
+            <pre><code>&lt;article&gt;
+    &lt;h2&gt;Main Article Content&lt;/h2&gt;
+    &lt;p&gt;This is the main article text...&lt;/p&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Related Links&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Related Article 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Related Article 2&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+&lt;/article&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Footer Element</h2>
+            <p>The footer element represents the footer of a document or section, typically containing copyright information, links to related documents, or contact information.</p>
+
+            <h3>Example Footer</h3>
+            <pre><code>&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2026 Your Company Name&lt;/p&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="privacy.html"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="terms.html"&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Figure and Figcaption</h2>
+            <p>The figure element represents self-contained content (like images, diagrams, code listings) that is referenced from the main content. The figcaption element provides a caption for the figure.</p>
+
+            <h3>Example Figure with Caption</h3>
+            <pre><code>&lt;figure&gt;
+    &lt;img src="diagram.png" alt="Architecture diagram"&gt;
+    &lt;figcaption&gt;Figure 1: System architecture overview&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Details and Summary</h2>
+            <p>The details element creates a disclosure widget that the user can open and close. The summary element provides a visible heading for the details.</p>
+
+            <h3>Interactive Example</h3>
+            <details>
+                <summary>Click to expand</summary>
+                <p>This content is hidden by default and appears when you click the summary.</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </details>
+
+            <h3>Code Example</h3>
+            <pre><code>&lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+    &lt;p&gt;This content is hidden by default.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/details&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Complete Semantic Page Structure</h2>
+            <p>Here's how all these elements work together in a typical webpage structure:</p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Site Title&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;p&gt;Article content...&lt;/p&gt;
+            
+            &lt;section&gt;
+                &lt;h3&gt;Section within article&lt;/h3&gt;
+                &lt;p&gt;Section content...&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;h3&gt;Related Content&lt;/h3&gt;
+            &lt;p&gt;Sidebar content...&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2026 Company Name&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Semantic Structure Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>

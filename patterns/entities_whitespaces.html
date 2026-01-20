@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of HTML entities and whitespace handling patterns.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Entities & Whitespace Patterns | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Entities & Whitespace Patterns</h1>
+        <p>Examples demonstrating HTML entities and how HTML handles whitespace.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>What are HTML Entities?</h2>
+            <p>HTML entities are special codes used to display reserved characters or symbols that would otherwise be interpreted as HTML code. They begin with an ampersand (&amp;) and end with a semicolon (;).</p>
+            
+            <p>Entities are essential when you want to display characters like &lt;, &gt;, &amp;, or special symbols like &copy;, &euro;, or &nbsp;.</p>
+        </section>
+
+        <section>
+            <h2>Common HTML Entities</h2>
+            <p>Here are the most commonly used HTML entities:</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Entity Code</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&amp;nbsp;</td>
+                        <td>Non-breaking space</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>&amp;lt;</td>
+                        <td>Less than sign</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>&amp;gt;</td>
+                        <td>Greater than sign</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>&amp;amp;</td>
+                        <td>Ampersand</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>&amp;quot;</td>
+                        <td>Quotation mark</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>&amp;apos;</td>
+                        <td>Apostrophe</td>
+                    </tr>
+                    <tr>
+                        <td>&copy;</td>
+                        <td>&amp;copy;</td>
+                        <td>Copyright symbol</td>
+                    </tr>
+                    <tr>
+                        <td>&reg;</td>
+                        <td>&amp;reg;</td>
+                        <td>Registered trademark</td>
+                    </tr>
+                    <tr>
+                        <td>&trade;</td>
+                        <td>&amp;trade;</td>
+                        <td>Trademark symbol</td>
+                    </tr>
+                    <tr>
+                        <td>&euro;</td>
+                        <td>&amp;euro;</td>
+                        <td>Euro currency symbol</td>
+                    </tr>
+                    <tr>
+                        <td>&pound;</td>
+                        <td>&amp;pound;</td>
+                        <td>Pound sterling symbol</td>
+                    </tr>
+                    <tr>
+                        <td>&yen;</td>
+                        <td>&amp;yen;</td>
+                        <td>Yen currency symbol</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Displaying HTML Code</h2>
+            <p>To display HTML code as text on a webpage, you must use entities to prevent the browser from interpreting it as actual HTML.</p>
+
+            <h3>Example: Displaying HTML Tags</h3>
+            <p>To show this code: &lt;p&gt;Hello World&lt;/p&gt;</p>
+            <p>You must write: <code>&amp;lt;p&amp;gt;Hello World&amp;lt;/p&amp;gt;</code></p>
+
+            <h3>Example: Showing Code in Pre Tag</h3>
+            <pre><code>&lt;div class="container"&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;p&gt;Content goes here&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Special Symbols and Characters</h2>
+            <p>HTML entities can also represent mathematical symbols, arrows, and other special characters.</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Entity Code</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&times;</td>
+                        <td>&amp;times;</td>
+                        <td>Multiplication sign</td>
+                    </tr>
+                    <tr>
+                        <td>&divide;</td>
+                        <td>&amp;divide;</td>
+                        <td>Division sign</td>
+                    </tr>
+                    <tr>
+                        <td>&plusmn;</td>
+                        <td>&amp;plusmn;</td>
+                        <td>Plus-minus sign</td>
+                    </tr>
+                    <tr>
+                        <td>&ne;</td>
+                        <td>&amp;ne;</td>
+                        <td>Not equal to</td>
+                    </tr>
+                    <tr>
+                        <td>&le;</td>
+                        <td>&amp;le;</td>
+                        <td>Less than or equal to</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;</td>
+                        <td>&amp;ge;</td>
+                        <td>Greater than or equal to</td>
+                    </tr>
+                    <tr>
+                        <td>&rarr;</td>
+                        <td>&amp;rarr;</td>
+                        <td>Right arrow</td>
+                    </tr>
+                    <tr>
+                        <td>&larr;</td>
+                        <td>&amp;larr;</td>
+                        <td>Left arrow</td>
+                    </tr>
+                    <tr>
+                        <td>&uarr;</td>
+                        <td>&amp;uarr;</td>
+                        <td>Up arrow</td>
+                    </tr>
+                    <tr>
+                        <td>&darr;</td>
+                        <td>&amp;darr;</td>
+                        <td>Down arrow</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>How HTML Handles Whitespace</h2>
+            <p>HTML collapses multiple whitespace characters (spaces, tabs, line breaks) into a single space. This is called "whitespace collapsing."</p>
+            
+            <p>Understanding this behavior is important for controlling how text appears on your webpage.</p>
+        </section>
+
+        <section>
+            <h2>Multiple Spaces Example</h2>
+            <p>No matter how many spaces you add in your HTML code, the browser will display only one space.</p>
+
+            <h3>Code with Multiple Spaces</h3>
+            <pre><code>&lt;p&gt;This    text    has    many    spaces.&lt;/p&gt;</code></pre>
+
+            <h3>Result (spaces collapsed)</h3>
+            <p>This    text    has    many    spaces.</p>
+
+            <h3>Using Non-Breaking Spaces</h3>
+            <p>To preserve multiple spaces, use &amp;nbsp; entity:</p>
+            <p>This&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;has&nbsp;&nbsp;&nbsp;&nbsp;preserved&nbsp;&nbsp;&nbsp;&nbsp;spaces.</p>
+
+            <pre><code>&lt;p&gt;This&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;text&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;has&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;preserved&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;spaces.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Line Breaks and Tabs in HTML</h2>
+            <p>Line breaks and tabs in your HTML source code are also collapsed into single spaces unless you use specific elements.</p>
+
+            <h3>Line Breaks in Code</h3>
+            <pre><code>&lt;p&gt;
+This text
+spans multiple
+lines in the code
+&lt;/p&gt;</code></pre>
+
+            <h3>Result (line breaks collapsed)</h3>
+            <p>
+This text
+spans multiple
+lines in the code
+</p>
+
+            <h3>Using &lt;br&gt; for Line Breaks</h3>
+            <p>
+This text<br>
+spans multiple<br>
+lines using br tags<br>
+</p>
+
+            <pre><code>&lt;p&gt;
+This text&lt;br&gt;
+spans multiple&lt;br&gt;
+lines using br tags&lt;br&gt;
+&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>The &lt;pre&gt; Element</h2>
+            <p>The pre element preserves whitespace exactly as it appears in your code. Spaces, line breaks, and tabs are all maintained.</p>
+
+            <h3>Text in &lt;pre&gt; Element</h3>
+            <pre>This    text    has    multiple    spaces.
+It also spans
+    multiple lines
+        with indentation
+            preserved.</pre>
+
+            <h3>Code Example</h3>
+            <pre><code>&lt;pre&gt;This    text    has    multiple    spaces.
+It also spans
+    multiple lines
+        with indentation
+            preserved.&lt;/pre&gt;</code></pre>
+
+            <h3>Using &lt;pre&gt; for Code Display</h3>
+            <pre><code>function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("Mehmet");</code></pre>
+        </section>
+
+        <section>
+            <h2>Practical Examples</h2>
+            <p>Here are some real-world scenarios where entities and whitespace handling matter:</p>
+
+            <h3>Example 1: Copyright Footer</h3>
+            <p>&copy; 2026 Mehmet Kaygusuz. All rights reserved.</p>
+            <pre><code>&lt;p&gt;&amp;copy; 2026 Mehmet Kaygusuz. All rights reserved.&lt;/p&gt;</code></pre>
+
+            <h3>Example 2: Price Display</h3>
+            <p>Price: &pound;49.99 | &euro;55.00 | &yen;6,800</p>
+            <pre><code>&lt;p&gt;Price: &amp;pound;49.99 | &amp;euro;55.00 | &amp;yen;6,800&lt;/p&gt;</code></pre>
+
+            <h3>Example 3: Mathematical Expression</h3>
+            <p>The formula is: x &times; y &divide; z &plusmn; 10</p>
+            <pre><code>&lt;p&gt;The formula is: x &amp;times; y &amp;divide; z &amp;plusmn; 10&lt;/p&gt;</code></pre>
+
+            <h3>Example 4: Showing HTML Code</h3>
+            <p>Use the &lt;strong&gt; tag for important text.</p>
+            <pre><code>&lt;p&gt;Use the &amp;lt;strong&amp;gt; tag for important text.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Entities & Whitespace Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of table patterns in HTML including basic tables, headers, and complex structures.">
+    <meta name="author" content="Mehmet Kaygusuz">
+    <title>Table Patterns | HTML Pattern Library</title>
+</head>
+<body>
+    <header>
+        <h1>Table Patterns</h1>
+        <p>Examples demonstrating how to create and structure tables in HTML.</p>
+        <a href="../index.html">Back to index</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Basic Table Structure</h2>
+            <p>A table consists of rows (tr) and cells. Cells can be data cells (td) or header cells (th).</p>
+
+            <h3>Simple Data Table</h3>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>25</td>
+                    <td>London</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>30</td>
+                    <td>Manchester</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>28</td>
+                    <td>Birmingham</td>
+                </tr>
+            </table>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;City&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;London&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+        &lt;td&gt;Manchester&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Table with Semantic Sections</h2>
+            <p>Tables can be divided into thead (header), tbody (body), and tfoot (footer) for better structure and accessibility.</p>
+
+            <h3>Table with thead, tbody, and tfoot</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>£800</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>£15</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Keyboard</td>
+                        <td>£45</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Items:</td>
+                        <td>10</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Product&lt;/th&gt;
+            &lt;th&gt;Price&lt;/th&gt;
+            &lt;th&gt;Quantity&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Laptop&lt;/td&gt;
+            &lt;td&gt;£800&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;Total Items:&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Colspan and Rowspan</h2>
+            <p>Use colspan to merge cells horizontally and rowspan to merge cells vertically.</p>
+
+            <h3>Colspan Example</h3>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Contact Information</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>alice@email.com</td>
+                    <td>+44 7123 456789</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>bob@email.com</td>
+                    <td>+44 7987 654321</td>
+                </tr>
+            </table>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th colspan="2"&gt;Contact Information&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;alice@email.com&lt;/td&gt;
+        &lt;td&gt;+44 7123 456789&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>Rowspan Example</h3>
+            <table border="1">
+                <tr>
+                    <th>Day</th>
+                    <th>Morning</th>
+                    <th>Afternoon</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td>Foundation Mathematics</td>
+                    <td>Foundation Computing</td>
+                </tr>
+                <tr>
+                    <td>Study Session</td>
+                    <td>Project Work</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Technology Group Project</td>
+                    <td>Free Time</td>
+                </tr>
+            </table>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Day&lt;/th&gt;
+        &lt;th&gt;Morning&lt;/th&gt;
+        &lt;th&gt;Afternoon&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;Monday&lt;/td&gt;
+        &lt;td&gt;Foundation Mathematics&lt;/td&gt;
+        &lt;td&gt;Foundation Computing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Study Session&lt;/td&gt;
+        &lt;td&gt;Project Work&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Complex Table Example</h2>
+            <p>Combining colspan, rowspan, and semantic sections creates complex table structures.</p>
+
+            <h3>Course Schedule Table</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Time</th>
+                        <th colspan="3">Week Days</th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Wednesday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 11:00</td>
+                        <td>Foundation Mathematics</td>
+                        <td>Foundation Computing</td>
+                        <td>Technology Group Project</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 - 15:00</td>
+                        <td colspan="3">Self-Study / Lab Work</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th rowspan="2"&gt;Time&lt;/th&gt;
+            &lt;th colspan="3"&gt;Week Days&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Monday&lt;/th&gt;
+            &lt;th&gt;Wednesday&lt;/th&gt;
+            &lt;th&gt;Friday&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;9:00 - 11:00&lt;/td&gt;
+            &lt;td&gt;Foundation Mathematics&lt;/td&gt;
+            &lt;td&gt;Foundation Computing&lt;/td&gt;
+            &lt;td&gt;Technology Group Project&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>E-mail: mehmet1kaygusuz@gmail.com</p>
+            <p>GitHub: <a href="http://github.com/mehmet1kaygusuz">github.com/mehmet1kaygusuz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mehmet1kaygusuz">linkedin.com/in/mehmet1kaygusuz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 HTML Pattern Library | Table Patterns</p>
+        <p>&copy;2026 Mehmet Kaygusuz | UK</p>
+    </footer>
+</body>
+</html>
